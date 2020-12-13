@@ -13,14 +13,18 @@
   "author": "Sandeep Raveesh",
   "license": "ISC",
   "dependencies": {
+    "axios": "^0.21.0",
     "babel-polyfill": "^6.26.0",
     "express": "^4.16.3",
     "react": "^16.5.2",
-    "react-dom": "^16.5.2"
+    "react-dom": "^16.5.2",
+    "semantic-ui-css": "^2.4.1",
+    "semantic-ui-react": "^2.0.1"
   },
   "devDependencies": {
     "@babel/core": "^7.0.0",
     "@babel/plugin-proposal-class-properties": "^7.0.0",
+    "@babel/plugin-transform-arrow-functions": "^7.12.1",
     "@babel/preset-env": "^7.0.0",
     "@babel/preset-react": "^7.0.0",
     "babel-eslint": "^10.0.0",

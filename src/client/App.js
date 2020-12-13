@@ -1,23 +1,21 @@
-import React, { Component } from 'react';
-import './app.css';
-import ReactImage from './react.png';
+import React, { useEffect } from "react";
+import "./app.css";
+import "semantic-ui-css/semantic.min.css";
+import CardSearchForm from "./CardSearchForm";
 
-export default class App extends Component {
-  state = { username: null };
+const App = () => {
+  // useEffect(() => {
+  //   fetch('/api/getUsername')
+  //     .then((res) => res.json())
+  //     .then((user) => this.setState({ username: user.username }));
+  // });
 
-  componentDidMount() {
-    fetch('/api/getUsername')
-      .then(res => res.json())
-      .then(user => this.setState({ username: user.username }));
-  }
+  return (
+    <div>
+      <h1>Hello Trainer!</h1>
+      <CardSearchForm />
+    </div>
+  );
+};
 
-  render() {
-    const { username } = this.state;
-    return (
-      <div>
-        {username ? <h1>{`Hello ${username}`}</h1> : <h1>Loading.. please wait!</h1>}
-        <img src={ReactImage} alt="react" />
-      </div>
-    );
-  }
-}
+export default App;

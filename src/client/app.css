@@ -6,3 +6,13 @@ body {
   text-align: center;
   margin: auto;
 }
+
+.search-form {
+  margin: 0 auto;
+  border-color: gray;
+  width: 60%;
+}
+
+.ui.fluid.dropdown {
+  margin: 16px;
+}
